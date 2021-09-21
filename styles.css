@@ -7,8 +7,9 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px
+    font-family: "Montserrat", sans-serif;
+    margin: 0px auto;
+    width: 100%;
 }
 
 hr {
@@ -28,7 +29,14 @@ hr {
 
 .container-center {
     max-width: 600px;
+    width: 100%;
     margin: auto;
+}
+
+/** images **/
+.project-img {
+    width: 100%;
+    height: 320px;
 }
 
 /** links **/
@@ -47,6 +55,7 @@ hr {
     margin: 1rem 1rem 1rem 0rem;
 }
 
+
 .link-secondary {
     color: var(--primary-color);
     border-radius: 0.5rem;
@@ -54,7 +63,12 @@ hr {
     display: block;
     max-width: 140px;
     margin: 1rem 1rem 1rem 0rem;
-}   
+}
+
+.container p {
+    line-height: 1.5;
+}
+
 
 /** look into BEM naming convention for CSS **/
 
@@ -171,4 +185,24 @@ hr {
 /** blogs **/
 .showcase-blog {
     padding-bottom: 6rem;
+}
+
+@media (max-width: 900px) {
+  body {
+    max-width: 95%;
+    width: 100%;
+  }
+
+  .list-item-inline {
+    display: block;
+    padding: 0.5rem;
+  }
+
+  .container-center {
+    width: auto;
+  }
+
+  .link-primary {
+    display: block;
+  }
 }
